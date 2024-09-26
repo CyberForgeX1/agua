@@ -1,6 +1,7 @@
 import { HeroSection } from "@/components/HeroSection";
 import { ProfitAbleLoan } from "@/components/ProfitAbleLoan";
 import { ThreeCard } from "@/components/ThreeCard";
+import GettingCards from "@/components/GettingCards";
 import Image from "next/image";
 // import localFont from "next/font/local";
 
@@ -18,10 +19,26 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <main className="">
+      <main
+        style={{
+          background: "linear-gradient(135deg, #000000 50%, #a68b30 100%)",
+        }}
+        className=""
+      >
         <HeroSection />
         <ThreeCard />
+      </main>
+      <main
+        style={{
+          background:
+            "radial-gradient(circle at   70% 10%, #000000 49%, #a68b30 100%)",
+          backgroundAttachment:
+            "linear-gradient(135deg, #000000 65%, #a68b30 100%)",
+        }}
+        className=""
+      >
         <ProfitAbleLoan />
+        <GettingCards />
       </main>
     </>
   );
