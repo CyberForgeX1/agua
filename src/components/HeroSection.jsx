@@ -5,22 +5,21 @@ import HeroSlider from "./swiper/HeroSlider";
 
 export const HeroSection = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 h-screen">
+    <div className="grid  grid-cols-1 md:grid-cols-2 h-[550px]">
       {/* Text Section */}
       <div className="flex-1 flex flex-col justify-center  rounded-lg  p-5">
-        <h2 className="text-6xl text-white font-bold mb-2">A Bank That</h2>
         <h2 className="text-6xl text-white font-bold mb-2">
-          {" "}
-          Helps You To Win
+          A STABLE SILVER &
         </h2>
+        <h2 className="text-6xl text-white font-bold mb-2"> GOLD THAT HELPS</h2>
         <h2 className="text-5xl font-semibold text-yellow-600 my-4">
-          The Game
+          <span className="text-[#c9cbcc] text-5xl "> YOU WIN</span> THE GAME
         </h2>
 
         <p className="text-lg text-gray-200 leading-relaxed">
-          The Chess Bank is your partner in chess life. We offer you bank
-          services that have been fully secure for 10 years. We guarantee you
-          stability, speed, and nice bonuses when using the Sparktak app.
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industry's standard dummy text ever
+          since the 1500s,
         </p>
 
         <div className="mt-5 flex gap-4">
@@ -32,8 +31,10 @@ export const HeroSection = () => {
           </Link>
           <Link
             href={"/"}
-            className="bg-yellow-500 px-20 py-4 text-black font-semibold rounded-sm hover:bg-amber-800 cursor-pointer"
+            className=" border-2 border-white bg-gradient-to-r from-[#353535]  via-[#CBCDCF] via-30% to-[#6C6C6C]
+            to-70% bg-blend-multiply px-20 py-4 text-black font-semibold rounded-sm hover:bg-[#fad55a] cursor-pointer"
           >
+            {" "}
             CREATE CARDS
           </Link>
         </div>

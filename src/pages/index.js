@@ -3,6 +3,8 @@ import { ProfitAbleLoan } from "@/components/ProfitAbleLoan";
 import { ThreeCard } from "@/components/ThreeCard";
 import GettingCards from "@/components/GettingCards";
 import Image from "next/image";
+import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 // import localFont from "next/font/local";
 
 // const geistSans = localFont({
@@ -20,25 +22,27 @@ export default function Home() {
   return (
     <>
       <main
-        style={{
-          background: "linear-gradient(135deg, #000000 50%, #a68b30 100%)",
-        }}
-        className=""
+        // style={{
+        //   background: "linear-gradient(135deg, #000000 50%, #a68b30 100%)",
+        // }}
+        className="bg-[url('/bgs.png')] spark-animation bg-black  "
       >
+        <Navbar />
         <HeroSection />
         <ThreeCard />
       </main>
       <main
-        style={{
-          background:
-            "radial-gradient(circle at   70% 10%, #000000 49%, #a68b30 100%)",
-          backgroundAttachment:
-            "linear-gradient(135deg, #000000 65%, #a68b30 100%)",
-        }}
-        className=""
+        // style={{
+        //   background:
+        //     "radial-gradient(circle at   70% 10%, #000000 49%, #a68b30 100%)",
+        //   backgroundAttachment:
+        //     "linear-gradient(135deg, #000000 65%, #a68b30 100%)",
+        // }}
+        className="bg-[url('/bgGold.png')] p-6  bg-black bg-cover "
       >
         <ProfitAbleLoan />
         <GettingCards />
+        <Footer />
       </main>
     </>
   );

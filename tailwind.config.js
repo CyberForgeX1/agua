@@ -7,9 +7,17 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+      backgroundImage: {
+        spark: "url('/bgs.png')",
+      },
+      keyframes: {
+        spark: {
+          "0%, 100%": { opacity: "0", transform: "scale(1)" },
+          "50%": { opacity: "1", transform: "scale(1.2)" },
+        },
+      },
+      animation: {
+        spark: "spark 2s infinite",
       },
     },
   },

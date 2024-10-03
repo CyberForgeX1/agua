@@ -4,12 +4,9 @@ import "@/styles/globals.css";
 
 export default function App({ Component, pageProps }) {
   return (
-    <div className="bg-black">
-      <div className="max-w-screen-2xl mx-auto ">
-        <Navbar />
-        <Component {...pageProps} />;
-        <Footer />
-      </div>
-    </div>
+    <>
+      {/* <Navbar /> */}
+      <Component {...pageProps} />;{/* <Footer /> */}
+    </>
   );
 }
